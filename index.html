@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>techbazar — Marketplace de eletrônicos usados</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-800 min-h-screen flex flex-col">
+
+    <header class="bg-white border-b border-slate-200 shadow-sm">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+            <a href="#" class="text-2xl font-bold text-indigo-600">techbazar</a>
+            <nav class="flex items-center gap-4">
+                <a href="#" class="text-sm font-medium text-slate-600 hover:text-indigo-600">Entrar</a>
+                <a href="#" class="text-sm font-medium bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700">Anunciar</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="bg-gradient-to-b from-indigo-50 to-slate-50 py-16">
+        <div class="max-w-3xl mx-auto px-4 text-center">
+            <h1 class="text-4xl font-bold text-slate-900 mb-3">Eletrônicos usados, sem complicação</h1>
+            <p class="text-slate-600 mb-8">Compre e venda smartphones, notebooks, fones e mais — direto entre pessoas.</p>
+            <form onsubmit="event.preventDefault(); alert('Busca demonstrativa por: ' + document.getElementById('q').value);" class="flex gap-2 max-w-xl mx-auto">
+                <input id="q" type="search" placeholder="O que você procura?"
+                       class="flex-1 px-4 py-3 rounded-md border border-slate-300 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                <button type="submit"
+                        class="px-6 py-3 bg-indigo-600 text-white font-medium rounded-md hover:bg-indigo-700">
+                    Buscar
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <main class="flex-1 max-w-6xl mx-auto px-4 py-12 w-full">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6">Em destaque</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+            <article class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-slate-200">
+                <img src="https://placehold.co/400x300/6366f1/ffffff?text=iPhone+12" alt="iPhone 12 64GB" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="font-semibold text-slate-900 mb-1">iPhone 12 64GB</h3>
+                    <p class="text-2xl font-bold text-indigo-600 mb-2">R$ 2.499,00</p>
+                    <p class="text-xs text-slate-500">Vendido por @joao_tech</p>
+                </div>
+            </article>
+
+            <article class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-slate-200">
+                <img src="https://placehold.co/400x300/0ea5e9/ffffff?text=MacBook+Air" alt="MacBook Air M1" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="font-semibold text-slate-900 mb-1">MacBook Air M1</h3>
+                    <p class="text-2xl font-bold text-indigo-600 mb-2">R$ 5.890,00</p>
+                    <p class="text-xs text-slate-500">Vendido por @maria_dev</p>
+                </div>
+            </article>
+
+            <article class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-slate-200">
+                <img src="https://placehold.co/400x300/10b981/ffffff?text=Sony+WH-1000XM4" alt="Headphone Sony WH-1000XM4" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="font-semibold text-slate-900 mb-1">Headphone Sony WH-1000XM4</h3>
+                    <p class="text-2xl font-bold text-indigo-600 mb-2">R$ 1.299,00</p>
+                    <p class="text-xs text-slate-500">Vendido por @ana_audio</p>
+                </div>
+            </article>
+
+            <article class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-slate-200">
+                <img src="https://placehold.co/400x300/f59e0b/ffffff?text=Monitor+LG+27" alt="Monitor LG 27 4K" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="font-semibold text-slate-900 mb-1">Monitor LG 27" 4K</h3>
+                    <p class="text-2xl font-bold text-indigo-600 mb-2">R$ 1.890,00</p>
+                    <p class="text-xs text-slate-500">Vendido por @pedro_setup</p>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <footer class="bg-slate-900 text-slate-400 py-6 mt-12">
+        <div class="max-w-6xl mx-auto px-4 text-center text-sm">
+            techbazar — Mini-Projeto Avaliativo SESI/SENAI-SC
+        </div>
+    </footer>
+
+</body>
+</html>
